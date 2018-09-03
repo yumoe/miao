@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="muyu.css">
+    <link rel="stylesheet" href="pure.css">
+    <title>喵码</title>
+    <style>
+        fieldset {text-align: center}
+        .pure-menu, .pure-menu-children {background: lightblue}
+        @media (max-width: 600px) {.area {width: 80%;height: 125px;margin: 0 auto !important;}}
+        @media (min-width: 600px) {.area {width: 50%;height: 190px;margin: 0 auto !important;}}
+    </style>
+</head>
+<body>
+    <div class="pure-menu pure-menu-horizontal">
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item pure-menu-selected"><a href="javascript:;" class="pure-menu-link">喵码</a></li>
+            <li class="pure-menu-item pure-menu-allow-hover">
+                <a target="_blank" href="https://miao.meetwhy.com" class="pure-menu-link">原型：MiaomiaomiaoTrans</a>
+            </li>
+            <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                <a href="javascript:;" class="pure-menu-link">友链</a>
+                <ul class="pure-menu-children">
+                    <li class="pure-menu-item"><a target="_blank" href="https://muyu.moe" class="pure-menu-link">Moodrain</a></li>
+                    <li class="pure-menu-item"><a target="_blank" href="https://www.moodrain.cn" class="pure-menu-link">Melee</a></li>
+                    <li class="pure-menu-item"><a target="_blank" href="https://blog.meetwhy.com" class="pure-menu-link">Ericwyn</a></li>
+                    <li class="pure-menu-item"><a target="_blank" href="https://moodrain.cn" class="pure-menu-link">Bookmark</a></li>
+                    <li class="pure-menu-item"><a target="_blank" href="https://github.com/moodrain" class="pure-menu-link">Github</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <form class="pure-form pure-form-stacked">
+        <fieldset>
+            <label>喵码</label>
+            <textarea class="area" id="toDecode-area"></textarea>
+            <label>原始</label>
+            <textarea class="area" id="toEncode-area"></textarea>
+            <label>结果</label>
+            <textarea class="area" id="result-area"></textarea>
+            <br />
+            <button id="encode-btn" class="pure-button pure-button-default" type="button">编码</button>
+            <button id="decode-btn" class="pure-button pure-button-primary" type="button">解码</button>
+            <a id="url-a" href="javascript:;">跳转链接</a>
+        </fieldset>
+    </form>
+    <script src="muyu.js"></script>
+    <script src="clipboard.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
