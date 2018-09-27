@@ -70,7 +70,7 @@ function decodeBtn() {
         $notify('密码已复制，请点击链接跳转')
     }
     else if(str.indexOf('http') === 0)
-        window.open(str)
+        window.location = str
     else {
         $v('result-area', str)
         $notify('解析完成')
